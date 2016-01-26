@@ -52,7 +52,7 @@ function main() {
     Logger.log(adgroupName + " QS: " + adgroupQualityScore);
   
     var date = new Date();
-    var spreadsheetUrl = "https://docs.google.com/a/bnsly.com/spreadsheets/d/1hW8Rdb6Z-2Q8_HzMAUeZ7ozOE16a-43OfG3yMwXI_wI/edit?usp=sharing";
+    var spreadsheetUrl = "GOOGLE_SHEETS_SHARE_URL";
     var qualityScoreSheet = SpreadsheetApp.openByUrl(spreadsheetUrl).getActiveSheet();
     qualityScoreSheet.appendRow([date, adgroupName, campaignName, 
                                  adgroupStats.getImpressions(),adgroupStats.getClicks(),adgroupStats.getConvertedClicks(),
